@@ -1,0 +1,7 @@
+{
+  "name": "learning-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
