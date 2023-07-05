@@ -1,5 +1,7 @@
 import { IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
-
+interface SegmentsProps {
+    
+}
 const Segments = () => {
   return (
     <IonSegment value="default">
