@@ -1,0 +1,55 @@
+.learning-input-password {
+  .btn_eye_icon {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% - 95%);
+    background: transparent;
+
+    ion-icon {
+      font-size: 20px;
+      color: #757575;
+    }
+    margin-right: 8px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: var(--item-hover);
+    }
+  }
+
+  .btn_eye_icon:focus {
+    outline: none !important;
+  }
+}
+
+ion-searchbar.learning-search-input {
+  --border-radius: 10px;
+  // --background: var(--ion-color-light-shade);
+  padding: 0px;
+
+  .searchbar-input-container {
+    height: 48px;
+    input {
+      font-family: Poppins;
+      font-size: 14px !important;
+      padding-left: 40px !important;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    ion-icon {
+      width: 20px;
+      margin-left: 8px !important;
+      color: var(--ion-color-dark);
+      font-weight: 800;
+    }
+
+    button.searchbar-clear-button {
+      margin-right: 12px;
+    }
+  }
+}

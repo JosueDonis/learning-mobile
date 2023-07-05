@@ -1,0 +1,65 @@
+* {
+  font-family: Poppins;
+}
+
+.learning-tabs {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: clamp(70px, 78px, 78px);
+  // background: var(--ion-background-tabs);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  ion-tab-button {
+    --color-selected: var(--ion-color-primary);
+    ion-button {
+      ion-icon {
+        font-size: 1.563rem;
+      }
+      padding: 0.5rem;
+      color: var(--ion-color-medium);
+      &.active {
+        background: rgba(var(--ion-color-primary-rgb), 0.14);
+        color: var(--ion-color-primary);
+      }
+    }
+  }
+}
+
+.learning-header {
+  background: var(--ion-background-color);
+  ion-toolbar {
+    --background: transparent;
+    background: transparent;
+    // backdrop-filter: blur(10px);
+    --border-color: transparent;
+  }
+}
+
+.learning-content {
+  --padding-top: 16px;
+  --padding-end: 16px;
+  --padding-bottom: 0px;
+  --padding-start: 16px;
+  padding: 16px 16px 0px 16px;
+}
+
+.learning-header-condense {
+  ion-toolbar {
+    --padding-top: 0;
+    padding-top: 0;
+  }
+}
+
+ion-button {
+  &.rounded {
+    --border-radius: 8px;
+  }
+}
+
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
+  // border: 1px solid #ddd;
+}
