@@ -12,7 +12,7 @@ const HeaderCondense: React.FC<HeaderProps> = ({ title, showAvatar = true }) => 
   return (
     <IonHeader mode="ios" collapse="condense" className="learning-header-condense">
       <IonToolbar className="mb-2">
-        <h3 className="p-0 text-3xl break-words font-bold font-poppins">{title}</h3>
+        <h3 className="p-0 text-2xl break-words font-bold font-poppins">{title}</h3>
         <IonButtons slot="end">
           {showAvatar && hideAvatar && (
             <div

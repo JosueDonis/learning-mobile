@@ -30,3 +30,8 @@ export type CalendarType = {
   date?: Date;
   endDate?: Date;
 };
+
+export type SegmentType = {
+  label?: string;
+  value?: string;
+}

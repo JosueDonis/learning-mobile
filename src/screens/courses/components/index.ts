@@ -1,3 +1,4 @@
+import CardCourse from "./CardCourse";
 import Segments from "./Segments";
 
-export {Segments}
+export { Segments, CardCourse };

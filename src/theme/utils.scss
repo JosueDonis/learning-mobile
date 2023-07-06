@@ -63,3 +63,22 @@ ion-button {
   overflow: hidden;
   // border: 1px solid #ddd;
 }
+
+.learning-segment {
+  border-radius: 20px;
+  ion-segment-button::part(indicator-background) {
+    background: var(--ion-color-primary);
+  }
+  ion-segment-button.ios::part(native) {
+    // color: var(--ion-color-primary);
+    height: 40px;
+  }
+  
+  .segment-button-checked.ios::part(native) {
+    color: #fff;
+  }
+  
+  ion-segment-button.ios::part(indicator-background) {
+    border-radius: 20px;
+  }
+}

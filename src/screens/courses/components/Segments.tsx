@@ -1,16 +1,20 @@
+import { SegmentType } from "@/types/elements";
 import { IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
 interface SegmentsProps {
-    
+  value?: string;
+  onChange?: (value?: string) => void;
+  segments?: SegmentType[];
 }
-const Segments = () => {
+const Segments: React.FC<SegmentsProps> = ({ value, onChange, segments }) => {
   return (
-    <IonSegment value="default">
-      <IonSegmentButton value="default">
-        <IonLabel>Default</IonLabel>
-      </IonSegmentButton>
-      <IonSegmentButton value="segment">
-        <IonLabel>Segment</IonLabel>
-      </IonSegmentButton>
+    <IonSegment className="learning-segment" value={value} mode="ios" onIonChange={(e) => {
+        onChange && onChange(e?.detail?.value as string);
+    }}>
+      {segments?.map(({ value, label }) => (
+        <IonSegmentButton key={value} value={value}>
+          <IonLabel>{label}</IonLabel>
+        </IonSegmentButton>
+      ))}
     </IonSegment>
   );
 };

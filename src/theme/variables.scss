@@ -3,26 +3,26 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
-  --ion-color-primary: #27187e;;
-	--ion-color-primary-rgb: 39,24,126;
-	--ion-color-primary-contrast: #ffffff;
-	--ion-color-primary-contrast-rgb: 255,255,255;
-	--ion-color-primary-shade: #22156f;
-	--ion-color-primary-tint: #3d2f8b;
+  --ion-color-primary: #27187e;
+  --ion-color-primary-rgb: 39, 24, 126;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #22156f;
+  --ion-color-primary-tint: #3d2f8b;
 
-	--ion-color-secondary: #758bfd;
-	--ion-color-secondary-rgb: 117,139,253;
-	--ion-color-secondary-contrast: #000000;
-	--ion-color-secondary-contrast-rgb: 0,0,0;
-	--ion-color-secondary-shade: #677adf;
-	--ion-color-secondary-tint: #8397fd;
+  --ion-color-secondary: #758bfd;
+  --ion-color-secondary-rgb: 117, 139, 253;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: #677adf;
+  --ion-color-secondary-tint: #8397fd;
 
-	--ion-color-tertiary: #aeb8fe;
-	--ion-color-tertiary-rgb: 174,184,254;
-	--ion-color-tertiary-contrast: #000000;
-	--ion-color-tertiary-contrast-rgb: 0,0,0;
-	--ion-color-tertiary-shade: #99a2e0;
-	--ion-color-tertiary-tint: #b6bffe;
+  --ion-color-tertiary: #aeb8fe;
+  --ion-color-tertiary-rgb: 174, 184, 254;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #99a2e0;
+  --ion-color-tertiary-tint: #b6bffe;
 
   /** success **/
   --ion-color-success: #2dd36f;
@@ -75,6 +75,8 @@ http://ionicframework.com/docs/theming/ */
   --ion-background-color: #f9f9f9;
   --ion-color-gray-light: #f9f9f9;
   --ion-background-tabs: #ffffff;
+  --ion-color-card: #fff;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,7 +150,8 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-tint: #383a3e;
 
     --ion-background-tabs: #161616;
-  --ion-color-gray-light: #86888f;
+    --ion-color-gray-light: #86888f;
+  --ion-color-card: #222428;
 
   }
 

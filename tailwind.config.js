@@ -87,6 +87,9 @@ export default {
           DEFAULT: "var(--ion-color-medium)",
           light: "var(--ion-color-gray-light)",
         },
+        card: {
+          DEFAULT: "var(--ion-color-card)",
+        },
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

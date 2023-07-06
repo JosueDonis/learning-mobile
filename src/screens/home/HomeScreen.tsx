@@ -27,11 +27,11 @@ const HomeScreen: React.FC<any> = () => {
     <IonPage>
       <Header title="Inicio" />
       <Content>
-        <HeaderCondense title={`Hola, ${user?.name}`} />
+        <HeaderCondense title={`Hola, ${user?.name} 👋`} />
         <section className="h-full mb-12">
           <div className="flex flex-col mt-2 mb-4">
             <h2 className="font-poppins font-bold mb-4 text-lg">Tu progreso</h2>
-            <div className="flex flex-row justify-evenly items-center">
+            <div className="flex flex-row md:justify-center gap-2 justify-evenly items-center">
               <ProgressIndicators />
             </div>
           </div>
