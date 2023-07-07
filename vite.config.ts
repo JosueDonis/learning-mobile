@@ -4,12 +4,11 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import path from "path";
 import svgr from "vite-plugin-svgr";
-import ssr from 'vite-plugin-ssr/plugin';
 import vercel from 'vite-plugin-vercel';
 import vercelSsr from '@magne4000/vite-plugin-vercel-ssr';
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), legacy(), svgr(), ssr(), vercel(), vercelSsr()],
+  plugins: [react(), legacy(), svgr(), vercel(), vercelSsr()],
   test: {
     globals: true,
     environment: "jsdom",
