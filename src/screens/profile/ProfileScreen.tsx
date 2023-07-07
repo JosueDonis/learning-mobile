@@ -10,6 +10,7 @@ const ProfileScreen: React.FC<any> = () => {
         <HeaderCondense title="Mi perfil" showAvatar={false} />
         <Profile klass="my-8" />
         <Options />
+        <div className="flex h-24"></div>
       </Content>
     </IonPage>
   );

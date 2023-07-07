@@ -28,6 +28,7 @@ const Tabs = () => {
     return history.listen((location: any) => {
       setHideTabBar(!tabs.some((tab) => tab.path == location.pathname));
       setPathname(location.pathname);
+      setSelectedTab(location.pathname)
     });
   }, [history]);
 

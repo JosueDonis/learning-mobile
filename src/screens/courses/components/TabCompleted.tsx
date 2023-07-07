@@ -13,7 +13,7 @@ const TabCompleted: React.FC<TabCompletedProps> = ({ search }) => {
         .includes(search?.trim()?.toLowerCase())
     );
     return filter.length ? (
-      filter.map((course) => <CardCourse key={course.id} {...course} />)
+      filter.map((course) => <CardCourse key={course.id} {...course} type="COMPLETED" />)
     ) : (
       <Placeholder
         klass="h-[55vh] w-full"

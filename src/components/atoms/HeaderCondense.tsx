@@ -17,7 +17,7 @@ const HeaderCondense: React.FC<HeaderProps> = ({ title, showAvatar = true }) => 
           {showAvatar && hideAvatar && (
             <div
               className={`animate__animated animate__fadeIn h-12 w-12 rounded-full flex items-center justify-center ring-white `}
-              onClick={() => history.push("/profile")}
+              onClick={() => history.replace("/profile")}
             >
               <img
                 className="h-12 w-12 rounded-full object-cover"
