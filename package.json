@@ -31,6 +31,7 @@
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",
     "sass": "^1.63.6",
+    "terser": "^5.18.2",
     "vite-plugin-svgr": "^3.2.0"
   },
   "devDependencies": {

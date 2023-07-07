@@ -1,5 +1,6 @@
 import { Progress } from "@/components/atoms";
 import { ProgressType } from "@/types/elements";
+import { ReactElement } from "react";
 const items: ProgressType[] = [
   {
     color: "primary",
@@ -18,19 +19,21 @@ const items: ProgressType[] = [
   },
 ];
 const ProgressIndicators = () => {
-  return items.map(
-    ({ klass, color, value, type, total, title, description }) => (
-      <Progress
-        key={color}
-        klass={klass}
-        color={color}
-        value={value}
-        total={total}
-        type={type}
-        title={title}
-        description={description}
-      />
-    )
+  return (
+    <>
+      {items.map(({ klass, color, value, type, total, title, description }) => (
+        <Progress
+          key={color}
+          klass={klass}
+          color={color}
+          value={value}
+          total={total}
+          type={type}
+          title={title}
+          description={description}
+        />
+      ))}
+    </>
   );
 };
 
