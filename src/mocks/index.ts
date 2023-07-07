@@ -1,3 +1,4 @@
+import { CourseType } from "@/types/course";
 import { CalendarType } from "@/types/elements";
 
 export const meetings: CalendarType[] = [
@@ -43,3 +44,72 @@ export const meetings: CalendarType[] = [
     ],
   },
 ];
+
+
+export const courses: CourseType[] = [{
+  id: crypto.randomUUID(),
+  title: "Fundamentos de Algebra",
+  teacher: "Raul Chux",
+  tags: ["Matemáticas", "Algebra", "Principiante"],
+  progress: "70%",
+  lessons: 20,
+  totalLessons: 24,
+  dueDate: new Date(),
+  picture: "../assets/img/math.jpg"
+}, {
+  id: crypto.randomUUID(),
+  title: "Fundamentos de Javascript",
+  teacher: "Raul Chux",
+  tags: ["Programación", "Javascript", "Web"],
+  progress: "12%",
+  lessons: 4,
+  totalLessons: 50,
+  dueDate: new Date(),
+  picture: "../assets/img/javascript.jpg"
+},
+{
+  id: crypto.randomUUID(),
+  title: "Photoshop Básico",
+  teacher: "Paola Mazariegos",
+  tags: ["Diseño", "Arte", "Imagen"],
+  progress: "30%",
+  lessons: 12,
+  totalLessons: 40,
+  dueDate: new Date(),
+  picture: "../assets/img/photosop.jpg"
+},
+{
+  id: crypto.randomUUID(),
+  title: "Fundamentos de UX",
+  teacher: "Pamela Donis",
+  tags: ["Diseño", "Arte", "Imagen"],
+  progress: "90%",
+  lessons: 40,
+  totalLessons: 60,
+  dueDate: new Date(),
+  picture: "../assets/img/ux.jpg"
+}]
+
+
+export const coursesCompleted: CourseType[] = [{
+  id: crypto.randomUUID(),
+  title: "Fundamentos de Aritmética",
+  teacher: "Hugo Donis",
+  tags: ["Matemáticas", "Algebra", "Principiante"],
+  progress: "100%",
+  lessons: 30,
+  totalLessons: 30,
+  dueDate: new Date(),
+  picture: "../assets/img/arithmetic.jpg"
+},
+{
+  id: crypto.randomUUID(),
+  title: "Fundamentos Básico de Office",
+  teacher: "Paola Mazariegos",
+  tags: ["Ofimática", "Personal", "Word", "Excel", "PowerPoint"],
+  progress: "100%",
+  lessons: 40,
+  totalLessons: 40,
+  dueDate: new Date(),
+  picture: "../assets/img/office.jpg"
+}]

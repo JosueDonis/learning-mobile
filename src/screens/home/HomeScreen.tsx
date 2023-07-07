@@ -28,7 +28,7 @@ const HomeScreen: React.FC<any> = () => {
       <Header title="Inicio" />
       <Content>
         <HeaderCondense title={`Hola, ${user?.name} 👋`} />
-        <section className="h-full mb-12">
+        <section className="h-full">
           <div className="flex flex-col mt-2 mb-4">
             <h2 className="font-poppins font-bold mb-4 text-lg">Tu progreso</h2>
             <div className="flex flex-row md:justify-center gap-2 justify-evenly items-center">
@@ -46,6 +46,8 @@ const HomeScreen: React.FC<any> = () => {
             <Chart loading={chartLoading} options={dayChartOptions} />
           </div>
         </section>
+        <div className="flex h-24"></div>
+
       </Content>
     </IonPage>
   );

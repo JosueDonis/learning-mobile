@@ -1,11 +1,13 @@
 import { Header, HeaderCondense, SearchInput } from "@/components/atoms";
 import { Content } from "@/components/templates";
 import { IonContent, IonPage } from "@ionic/react";
-import { CardCourse, Segments } from "./components";
+import { CardCourse, Segments, TabCompleted, TabOnGoing } from "./components";
 import { SegmentType } from "@/types/elements";
 import { useState } from "react";
+import { courses } from "@/mocks";
 
 const CoursesScreen: React.FC<any> = () => {
+  const [search, setSearch] = useState("");
   const segments: SegmentType[] = [
     {
       label: "En curso",
@@ -22,11 +24,11 @@ const CoursesScreen: React.FC<any> = () => {
 
   return (
     <IonPage>
-      <Header title="Cursos" />
+      <Header title="Mis cursos" />
       <Content>
         <HeaderCondense title="Mis cursos" />
         <section>
-          <SearchInput onInput={() => null} />
+          <SearchInput value={search} onInput={(value) => setSearch(value)} />
           <div className="mt-4">
             <Segments
               value={segmentSelected}
@@ -36,9 +38,14 @@ const CoursesScreen: React.FC<any> = () => {
               }}
             />
           </div>
-          <div className="mt-4">
-          <CardCourse />
+          <div className="mt-4 grid md:grid-cols-2 md:justify-normal justify-between grid-cols-1 gap-2">
+            {segmentSelected === "ON_GOING" ? (
+              <TabOnGoing search={search} />
+            ) : (
+              <TabCompleted search={search} />
+            )}
           </div>
+          <div className="flex h-24"></div>
         </section>
       </Content>
     </IonPage>

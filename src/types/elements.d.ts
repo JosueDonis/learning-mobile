@@ -34,4 +34,14 @@ export type CalendarType = {
 export type SegmentType = {
   label?: string;
   value?: string;
-}
+};
+
+export type PlaceholderType = {
+  klass?: string;
+  state?: string;
+  title?: string;
+  description?: string;
+  img?: string;
+  icon?: string;
+  klassIcon?: string;
+};

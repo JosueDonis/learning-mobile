@@ -82,3 +82,24 @@ ion-button {
     border-radius: 20px;
   }
 }
+
+
+.learning-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  & > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
